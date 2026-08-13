@@ -594,6 +594,14 @@ html.light .credential b,html.light .metric b,html.light .check b,
 html.light .contact-row a{
   font-weight:800!important;
 }
+
+.social-pill,.contact-row,.location-row{display:flex!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important}
+.social-icon,.location-icon{width:19px;height:19px;min-width:19px;display:inline-flex;align-items:center;justify-content:center;color:currentColor}
+.social-icon svg,.location-icon svg{width:18px;height:18px;display:block}
+html.light .social-icon{color:#10241d!important}
+html:not(.light) .social-icon{color:#d8eee5}
+.location-icon{color:#53f3ad}
+html.light .location-icon{color:#075f3f!important}
 </style>
 </head>
 <body>
@@ -616,8 +624,8 @@ html.light .contact-row a{
       <a class="outline-btn" href="#projects">View Projects ↗</a>
     </div>
     <div class="hero-socials" aria-label="Social links">
-      <a href="https://github.com/hemanth45-9" target="_blank" rel="noopener" class="social-pill">◈ GitHub</a>
-      <a href="https://www.linkedin.com/in/a-hemanth-kumar-48a7ab306/" target="_blank" rel="noopener" class="social-pill">in LinkedIn</a>
+      <a href="https://github.com/hemanth45-9" target="_blank" rel="noopener" class="social-pill"><span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6A11.4 11.4 0 0 0 8.4 23c.57.1.78-.25.78-.55v-2.02c-3.17.69-3.84-1.34-3.84-1.34-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.67 1.25 3.32.95.1-.74.4-1.25.73-1.54-2.53-.29-5.19-1.27-5.19-5.65 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.17a10.9 10.9 0 0 1 5.72 0c2.18-1.48 3.14-1.17 3.14-1.17.62 1.57.23 2.73.11 3.02.73.8 1.18 1.82 1.18 3.07 0 4.39-2.67 5.35-5.21 5.64.41.36.78 1.06.78 2.14v3.17c0 .3.21.66.79.55A11.4 11.4 0 0 0 12 .6Z"/></svg></span>◈ GitHub</a>
+      <a href="https://www.linkedin.com/in/a-hemanth-kumar-48a7ab306/" target="_blank" rel="noopener" class="social-pill"><span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.16 7.24A2.16 2.16 0 1 1 5.16 2.92a2.16 2.16 0 0 1 0 4.32ZM3.23 21.08h3.86V9.2H3.23v11.88ZM9.53 9.2h3.7v1.62h.05c.52-.99 1.78-2.03 3.66-2.03 3.92 0 4.64 2.58 4.64 5.93v6.36h-3.86v-5.64c0-1.35-.02-3.09-1.88-3.09-1.89 0-2.18 1.47-2.18 2.99v5.74H9.8V9.2h-.27Z"/></svg></span>in LinkedIn</a>
       <a href="mailto:akkapeddihemanthkumar9@gmail.com" class="social-pill">✉ Email</a>
     </div>
   </div>
@@ -687,7 +695,7 @@ html.light .contact-row a{
   <span class="phone-blurred" id="phoneText">8374450045</span>
   <span class="phone-hint" id="phoneHint">Click to reveal</span>
 </button>
-</div><div class="contact-row"><span>LOCATION</span>Hyderabad, Telangana, India</div><div class="contact-row"><span>PROFILES</span><a href="https://github.com/hemanth45-9" target="_blank">GitHub</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/a-hemanth-kumar-48a7ab306/" target="_blank">LinkedIn</a></div></div>
+</div><div class="contact-row"><span>LOCATION</span>Hyderabad, Telangana, India</div><div class="contact-row"><span>PROFILES</span><a href="https://github.com/hemanth45-9" target="_blank"><span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6A11.4 11.4 0 0 0 8.4 23c.57.1.78-.25.78-.55v-2.02c-3.17.69-3.84-1.34-3.84-1.34-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.67 1.25 3.32.95.1-.74.4-1.25.73-1.54-2.53-.29-5.19-1.27-5.19-5.65 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.17a10.9 10.9 0 0 1 5.72 0c2.18-1.48 3.14-1.17 3.14-1.17.62 1.57.23 2.73.11 3.02.73.8 1.18 1.82 1.18 3.07 0 4.39-2.67 5.35-5.21 5.64.41.36.78 1.06.78 2.14v3.17c0 .3.21.66.79.55A11.4 11.4 0 0 0 12 .6Z"/></svg></span>GitHub</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/a-hemanth-kumar-48a7ab306/" target="_blank"><span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.16 7.24A2.16 2.16 0 1 1 5.16 2.92a2.16 2.16 0 0 1 0 4.32ZM3.23 21.08h3.86V9.2H3.23v11.88ZM9.53 9.2h3.7v1.62h.05c.52-.99 1.78-2.03 3.66-2.03 3.92 0 4.64 2.58 4.64 5.93v6.36h-3.86v-5.64c0-1.35-.02-3.09-1.88-3.09-1.89 0-2.18 1.47-2.18 2.99v5.74H9.8V9.2h-.27Z"/></svg></span>LinkedIn</a></div></div>
 <div class="contact-card glass">
 <div class="eyebrow">SECURE CHANNEL</div>
 <h3 style="font:700 21px 'Space Grotesk';margin:7px 0 7px">Let’s start a conversation.</h3>
