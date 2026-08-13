@@ -8,42 +8,41 @@
 <title>AHK — Professional Portfolio</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap');
-
 :root{
- --bg:#07111d;--bg2:#0a1724;--card:rgba(10,27,38,.76);--line:rgba(61,255,165,.17);
- --green:#35f39a;--green2:#16d979;--cyan:#54e9d0;--white:#e9f4f0;--muted:#78908c;
- --text:#e9f4f0;--sub:#78908c;--soft:#a9bbb5;--glass1:rgba(20,48,59,.48);--glass2:rgba(6,20,31,.38);
- --shadow:0 24px 80px rgba(0,0,0,.32);--max:1160px;
+--bg:#07111d;--bg2:#0a1724;--card:rgba(10,27,38,.76);--line:rgba(61,255,165,.17);
+--green:#35f39a;--green2:#16d979;--cyan:#54e9d0;--white:#e9f4f0;--muted:#78908c;
+--text:#e9f4f0;--sub:#78908c;--soft:#a9bbb5;--glass1:rgba(20,48,59,.48);--glass2:rgba(6,20,31,.38);
+--shadow:0 24px 80px rgba(0,0,0,.32);--max:1160px;
 }
 body.light{
- --bg:#f5f8f6;--bg2:#edf4f1;--card:rgba(255,255,255,.62);--line:rgba(20,132,94,.18);
- --green:#12845d;--green2:#0b9b68;--cyan:#177d6a;--white:#132019;--muted:#64736e;
- --text:#132019;--sub:#62706b;--soft:#40504a;--glass1:rgba(255,255,255,.72);--glass2:rgba(242,248,245,.62);
- --shadow:0 22px 60px rgba(29,67,54,.10);
+--bg:#f5f8f6;--bg2:#edf4f1;--card:rgba(255,255,255,.62);--line:rgba(20,132,94,.18);
+--green:#12845d;--green2:#0b9b68;--cyan:#177d6a;--white:#132019;--muted:#64736e;
+--text:#132019;--sub:#62706b;--soft:#40504a;--glass1:rgba(255,255,255,.72);--glass2:rgba(242,248,245,.62);
+--shadow:0 22px 60px rgba(29,67,54,.10);
 }
 body{color:var(--text);background:
- radial-gradient(circle at 14% 12%,rgba(32,170,125,.08),transparent 28%),
- radial-gradient(circle at 84% 30%,rgba(37,130,112,.07),transparent 30%),
- linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%)}
+radial-gradient(circle at 14% 12%,rgba(32,170,125,.08),transparent 28%),
+radial-gradient(circle at 84% 30%,rgba(37,130,112,.07),transparent 30%),
+linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%)}
 body:before{opacity:.08;background-image:linear-gradient(rgba(18,132,93,.10) 1px,transparent 1px),linear-gradient(90deg,rgba(18,132,93,.10) 1px,transparent 1px)}
 body.light header{background:rgba(250,253,251,.78);border-bottom-color:rgba(18,132,93,.10)}
 body.light .navlinks{color:#64736e}
 body.light .hero-sub,.light .hero-sub{color:var(--sub)}
 .glass,.feature,.skill,.project,.credential,.contact-card,.metric,.terminal,.social-pill,.field,.send,.hello-btn,.check,.phone-reveal{
- background:linear-gradient(135deg,var(--glass1),var(--glass2))!important;
- border-color:var(--line)!important;
- box-shadow:inset 0 1px 0 rgba(255,255,255,.48),0 16px 45px rgba(0,0,0,.08)!important;
- backdrop-filter:blur(18px) saturate(125%)!important;-webkit-backdrop-filter:blur(18px) saturate(125%)!important
+background:linear-gradient(135deg,var(--glass1),var(--glass2))!important;
+border-color:var(--line)!important;
+box-shadow:inset 0 1px 0 rgba(255,255,255,.48),0 16px 45px rgba(0,0,0,.08)!important;
+backdrop-filter:blur(18px) saturate(125%)!important;-webkit-backdrop-filter:blur(18px) saturate(125%)!important
 }
 body.light .glass,body.light .feature,body.light .skill,body.light .project,body.light .credential,body.light .contact-card,
 body.light .metric,body.light .terminal,body.light .social-pill,body.light .field,body.light .check{
- box-shadow:inset 0 1px 0 rgba(255,255,255,.82),0 16px 45px rgba(30,65,53,.07)!important
+box-shadow:inset 0 1px 0 rgba(255,255,255,.82),0 16px 45px rgba(30,65,53,.07)!important
 }
 .theme-toggle{width:39px;height:39px;border-radius:9px;border:1px solid var(--line);background:linear-gradient(135deg,var(--glass1),var(--glass2));color:var(--text);cursor:pointer;display:grid;place-items:center;font-size:15px;backdrop-filter:blur(14px);transition:.2s}
 .theme-toggle:hover{transform:translateY(-2px);border-color:rgba(53,243,154,.4)}
 .nav-actions{display:flex;gap:8px;align-items:center}
 :root{
- --shadow:0 24px 80px rgba(0,0,0,.32);--max:1160px;
+--shadow:0 24px 80px rgba(0,0,0,.32);--max:1160px;
 }
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:
@@ -59,7 +58,7 @@ a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),92%);margin:auto
 box-shadow:inset 0 1px rgba(255,255,255,.045),var(--shadow);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
 header{position:sticky;top:0;z-index:50;background:rgba(5,14,24,.76);backdrop-filter:blur(18px);border-bottom:1px solid rgba(61,255,165,.07)}
 .nav{height:66px;display:flex;align-items:center;justify-content:space-between}
-.brand{font:700 19px "Space Grotesk";letter-spacing:-.04em}.brand b{color:var(--green)}
+.brand{display:inline-flex;align-items:center;justify-content:center;width:auto;height:auto;position:relative;text-decoration:none}.brand-logo{width:42px!important;height:42px!important;max-width:42px!important;max-height:42px!important;min-width:42px!important;min-height:42px!important;object-fit:contain!important;display:block!important;position:static!important;margin:0!important;padding:0!important;transition:transform .25s ease,filter .25s ease}.brand:hover .brand-logo{transform:scale(1.06);filter:drop-shadow(0 0 9px rgba(53,243,154,.45))}
 .navlinks{display:flex;gap:27px;font-size:11px;color:#8ca09e;text-transform:uppercase;letter-spacing:.12em}
 .navlinks a:hover,.navlinks a.active{color:var(--green)}.menu{display:none;border:1px solid var(--line);background:none;color:#fff;border-radius:8px;width:38px;height:38px}
 .hero{padding:78px 0 48px;min-height:680px;position:relative}
@@ -93,7 +92,6 @@ footer{border-top:1px solid rgba(61,255,165,.08);padding:24px 0;color:#617872;fo
 @media(max-width:980px){.hero-grid{grid-template-columns:1fr}.portrait-wrap{order:-1}.portrait{height:390px}.skills{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:720px){.navlinks{display:none}.menu{display:block}.navlinks.open{display:flex;position:absolute;top:66px;left:4%;right:4%;padding:15px;flex-direction:column;background:#07131ef5;border:1px solid var(--line);border-radius:10px}.security,.credentials,.contact,.projects{grid-template-columns:1fr}.skills{grid-template-columns:1fr 1fr}.metrics{grid-template-columns:1fr 1fr}.checks{grid-template-columns:1fr}.footer{display:block}.footer-links{margin-top:9px}}
 @media(max-width:440px){.skills{grid-template-columns:1fr}.hero{padding-top:48px}.portrait{width:280px}}
-
 .hero-socials{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:18px 0 0}
 .social-pill{display:inline-flex;align-items:center;gap:7px;padding:8px 11px;border-radius:8px;
 font:8px "JetBrains Mono";letter-spacing:.04em;color:#a8bdb5;background:rgba(8,25,35,.62);
@@ -116,64 +114,61 @@ font-size:10px;font-weight:800;cursor:pointer;transition:.2s}
 .dialog-actions .hello-btn{flex:1}
 .dialog-email{font:8px "JetBrains Mono";color:#6f8780}
 @media(max-width:600px){.dialog-form{grid-template-columns:1fr}.dialog-form textarea{grid-column:auto}.dialog-actions{grid-column:auto;flex-direction:column;align-items:stretch}.dialog-email{text-align:center}}
-
 /* Universal glassmorphism treatment */
 .glass,.feature,.skill,.project,.credential,.contact-card,.metric,.terminal,.social-pill,
 .field,.send,.hello-btn,.close-dialog,.badge,.check{
-  border-color:rgba(120,255,205,.18)!important;
-  background:linear-gradient(135deg,rgba(20,48,59,.48),rgba(6,20,31,.38))!important;
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),inset 0 -1px 0 rgba(120,255,205,.035),0 12px 40px rgba(0,0,0,.16)!important;
-  backdrop-filter:blur(18px) saturate(125%)!important;
-  -webkit-backdrop-filter:blur(18px) saturate(125%)!important;
+border-color:rgba(120,255,205,.18)!important;
+background:linear-gradient(135deg,rgba(20,48,59,.48),rgba(6,20,31,.38))!important;
+box-shadow:inset 0 1px 0 rgba(255,255,255,.07),inset 0 -1px 0 rgba(120,255,205,.035),0 12px 40px rgba(0,0,0,.16)!important;
+backdrop-filter:blur(18px) saturate(125%)!important;
+-webkit-backdrop-filter:blur(18px) saturate(125%)!important;
 }
 .field:focus{background:rgba(16,39,48,.55)!important;border-color:rgba(83,244,178,.42)!important}
 .navlinks.open{backdrop-filter:blur(20px)!important;-webkit-backdrop-filter:blur(20px)!important}
 .channel-dialog{background:rgba(8,25,34,.78)!important;border-color:rgba(120,255,205,.22)!important}
-
 .phone-reveal{
-  display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(120,255,205,.18);
-  border-radius:8px;padding:7px 10px;color:#a9bbb5;cursor:pointer;
-  background:linear-gradient(135deg,rgba(20,48,59,.48),rgba(6,20,31,.38));
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 8px 25px rgba(0,0,0,.12);
-  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
-  font:9px "JetBrains Mono";transition:.22s;
+display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(120,255,205,.18);
+border-radius:8px;padding:7px 10px;color:#a9bbb5;cursor:pointer;
+background:linear-gradient(135deg,rgba(20,48,59,.48),rgba(6,20,31,.38));
+box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 8px 25px rgba(0,0,0,.12);
+backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+font:9px "JetBrains Mono";transition:.22s;
 }
 .phone-reveal:hover{border-color:rgba(53,243,154,.4);transform:translateY(-1px)}
 .phone-blurred{filter:blur(5px);user-select:none;transition:.25s;color:#d5e6df;letter-spacing:.08em}
 .phone-reveal.revealed .phone-blurred{filter:none}
 .phone-hint{color:var(--green);font-size:8px}
 .phone-reveal.revealed .phone-hint{color:#728b84}
-
 /* Refined professional portrait treatment */
 .hero-grid{grid-template-columns:1fr 1.15fr .78fr;align-items:center;gap:30px}
 .portrait-wrap{justify-self:end;justify-items:end;min-height:390px;width:100%;max-width:360px;padding:20px}
 .portrait-card{
-  position:relative;width:290px;height:380px;border-radius:24px;padding:10px;
-  background:linear-gradient(145deg,rgba(28,59,67,.62),rgba(5,19,29,.52));
-  border:1px solid rgba(120,255,205,.22);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.09),inset 0 -1px 0 rgba(120,255,205,.04),
-             0 25px 70px rgba(0,0,0,.34),0 0 55px rgba(53,243,154,.06);
-  backdrop-filter:blur(22px) saturate(135%);
-  -webkit-backdrop-filter:blur(22px) saturate(135%);
+position:relative;width:290px;height:380px;border-radius:24px;padding:10px;
+background:linear-gradient(145deg,rgba(28,59,67,.62),rgba(5,19,29,.52));
+border:1px solid rgba(120,255,205,.22);
+box-shadow:inset 0 1px 0 rgba(255,255,255,.09),inset 0 -1px 0 rgba(120,255,205,.04),
+0 25px 70px rgba(0,0,0,.34),0 0 55px rgba(53,243,154,.06);
+backdrop-filter:blur(22px) saturate(135%);
+-webkit-backdrop-filter:blur(22px) saturate(135%);
 }
 .portrait-card:before{
-  content:"";position:absolute;inset:7px;border-radius:18px;border:1px solid rgba(255,255,255,.055);
-  pointer-events:none;
+content:"";position:absolute;inset:7px;border-radius:18px;border:1px solid rgba(255,255,255,.055);
+pointer-events:none;
 }
 .portrait-card:after{
-  content:"";position:absolute;width:110px;height:110px;right:-35px;top:-35px;border-radius:50%;
-  background:rgba(53,243,154,.08);filter:blur(20px);pointer-events:none;
+content:"";position:absolute;width:110px;height:110px;right:-35px;top:-35px;border-radius:50%;
+background:rgba(53,243,154,.08);filter:blur(20px);pointer-events:none;
 }
 .portrait{
-  position:relative;z-index:1;width:100%;height:100%;object-fit:cover;object-position:center top;
-  border-radius:17px;mask-image:none;filter:saturate(.82) contrast(1.05);
+position:relative;z-index:1;width:100%;height:100%;object-fit:cover;object-position:center top;
+border-radius:17px;mask-image:none;filter:saturate(.82) contrast(1.05);
 }
 .portrait-label{
-  position:absolute;z-index:3;left:22px;bottom:22px;padding:8px 10px;border-radius:9px;
-  background:rgba(5,18,26,.68);border:1px solid rgba(120,255,205,.16);
-  box-shadow:inset 0 1px rgba(255,255,255,.06),0 8px 24px rgba(0,0,0,.22);
-  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
-  font:8px "JetBrains Mono";color:#b7c9c3;letter-spacing:.08em;
+position:absolute;z-index:3;left:22px;bottom:22px;padding:8px 10px;border-radius:9px;
+background:rgba(5,18,26,.68);border:1px solid rgba(120,255,205,.16);
+box-shadow:inset 0 1px rgba(255,255,255,.06),0 8px 24px rgba(0,0,0,.22);
+backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+font:8px "JetBrains Mono";color:#b7c9c3;letter-spacing:.08em;
 }
 .portrait-label b{color:var(--green);font-weight:600}
 .portrait-corner{position:absolute;z-index:3;right:21px;top:20px;width:36px;height:36px;border-radius:9px;
@@ -182,13 +177,12 @@ color:var(--green);font:10px "JetBrains Mono";backdrop-filter:blur(14px)}
 .ring{width:340px;height:340px;right:0;opacity:.45;z-index:-1}
 .badge.left,.badge.right{display:none}
 @media(max-width:980px){
- .hero-grid{grid-template-columns:1fr}
- .portrait-wrap{order:-1;justify-self:center;justify-items:center;max-width:360px}
- .portrait-card{width:280px;height:365px}
- .ring{right:auto}
+.hero-grid{grid-template-columns:1fr}
+.portrait-wrap{order:-1;justify-self:center;justify-items:center;max-width:360px}
+.portrait-card{width:280px;height:365px}
+.ring{right:auto}
 }
 @media(max-width:720px){.portrait-wrap{padding:8px}.portrait-card{width:255px;height:330px}}
-
 .hero{padding:82px 0 0;min-height:auto}.hero-editorial{display:grid;grid-template-columns:1.08fr .92fr;gap:55px;align-items:center;max-width:1080px;margin:auto}
 .hero-copy{text-align:left}.hero-copy h1{font:700 clamp(45px,6vw,78px)/.98 "Space Grotesk";letter-spacing:-.06em;margin:15px 0 10px}.hero-copy h1 span{color:var(--green)}
 .hero-copy h2{font:600 clamp(30px,4vw,51px)/1.05 "Space Grotesk";letter-spacing:-.055em;max-width:700px;margin:0 0 18px}.hero-copy h2 span{color:var(--green)}
@@ -210,40 +204,39 @@ color:var(--green);font:10px "JetBrains Mono";backdrop-filter:blur(14px)}
 body.light .portrait-meta{background:rgba(255,255,255,.67);color:#40504a}.light .outline-btn{color:var(--text)}
 @media(max-width:980px){.hero-editorial{grid-template-columns:1fr;gap:20px}.hero-copy{text-align:center}.hero-copy .hero-sub{margin:auto}.hero-copy .hero-socials{justify-content:center}.hero-portrait{justify-content:center;min-height:420px}.portrait-status{left:calc(50% - 190px)}.about-editorial{grid-template-columns:1fr}.skill-grid-pro{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.hero{padding-top:55px}.hero-copy h1{font-size:48px}.hero-copy h2{font-size:31px}.portrait-card{width:290px;height:390px}.portrait-status{left:calc(50% - 160px);bottom:32px}.about-points{grid-template-columns:1fr}.skill-grid-pro{grid-template-columns:1fr}.skill-marquee{margin-top:35px}.marquee-track{gap:30px}}
-
 /* Full-page Light / Dark theme */
 :root{
-  color-scheme: dark;
-  --page-bg:#071019;
-  --page-bg-2:#0a1620;
-  --text-main:#edf7f3;
-  --text-muted:#9aafa8;
-  --glass-bg:rgba(13,31,40,.58);
-  --glass-border:rgba(120,255,205,.18);
+color-scheme: dark;
+--page-bg:#071019;
+--page-bg-2:#0a1620;
+--text-main:#edf7f3;
+--text-muted:#9aafa8;
+--glass-bg:rgba(13,31,40,.58);
+--glass-border:rgba(120,255,205,.18);
 }
 html.light{
-  color-scheme:light;
-  --page-bg:#f5f8f7;
-  --page-bg-2:#eaf1ee;
-  --text-main:#10201b;
-  --text-muted:#52645e;
-  --glass-bg:rgba(255,255,255,.62);
-  --glass-border:rgba(20,91,65,.16);
+color-scheme:light;
+--page-bg:#f5f8f7;
+--page-bg-2:#eaf1ee;
+--text-main:#10201b;
+--text-muted:#52645e;
+--glass-bg:rgba(255,255,255,.62);
+--glass-border:rgba(20,91,65,.16);
 }
 html,body{
-  background:var(--page-bg)!important;
-  color:var(--text-main);
-  transition:background-color .35s ease,color .35s ease;
+background:var(--page-bg)!important;
+color:var(--text-main);
+transition:background-color .35s ease,color .35s ease;
 }
 body{
-  background:
-    radial-gradient(circle at 82% 12%,rgba(53,243,154,.06),transparent 27%),
-    linear-gradient(135deg,var(--page-bg),var(--page-bg-2))!important;
+background:
+radial-gradient(circle at 82% 12%,rgba(53,243,154,.06),transparent 27%),
+linear-gradient(135deg,var(--page-bg),var(--page-bg-2))!important;
 }
 html.light body{
-  background:
-    radial-gradient(circle at 82% 12%,rgba(20,140,91,.08),transparent 27%),
-    linear-gradient(135deg,var(--page-bg),var(--page-bg-2))!important;
+background:
+radial-gradient(circle at 82% 12%,rgba(20,140,91,.08),transparent 27%),
+linear-gradient(135deg,var(--page-bg),var(--page-bg-2))!important;
 }
 html.light .glass,
 html.light .feature,
@@ -256,230 +249,223 @@ html.light .terminal,
 html.light .social-pill,
 html.light .field,
 html.light .phone-reveal{
-  background:linear-gradient(135deg,rgba(255,255,255,.72),rgba(235,244,240,.48))!important;
-  border-color:var(--glass-border)!important;
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),0 15px 45px rgba(30,65,52,.08)!important;
+background:linear-gradient(135deg,rgba(255,255,255,.72),rgba(235,244,240,.48))!important;
+border-color:var(--glass-border)!important;
+box-shadow:inset 0 1px 0 rgba(255,255,255,.85),0 15px 45px rgba(30,65,52,.08)!important;
 }
 html.light .nav,
 html.light header,
 html.light footer{
-  background:rgba(245,248,247,.68)!important;
-  border-color:rgba(20,91,65,.10)!important;
+background:rgba(245,248,247,.68)!important;
+border-color:rgba(20,91,65,.10)!important;
 }
 html.light .field{color:#10201b!important}
 html.light .field::placeholder{color:#71827c}
 html.light .eyebrow,
 html.light .ok,
 html.light .social-pill span{color:#08784e}
-
 /* Light-mode social links: keep strong contrast */
 html.light .hero-socials .social-pill,
 html.light .social-pill{
-  color:#10241d!important;
-  background:rgba(255,255,255,.78)!important;
-  border-color:rgba(15,105,72,.20)!important;
-  text-shadow:none!important;
+color:#10241d!important;
+background:rgba(255,255,255,.78)!important;
+border-color:rgba(15,105,72,.20)!important;
+text-shadow:none!important;
 }
 html.light .hero-socials .social-pill span,
 html.light .social-pill span{
-  color:#08784e!important;
+color:#08784e!important;
 }
 html.light .hero-socials .social-pill:hover,
 html.light .social-pill:hover{
-  color:#06130e!important;
-  background:rgba(255,255,255,.94)!important;
-  border-color:rgba(15,135,86,.38)!important;
+color:#06130e!important;
+background:rgba(255,255,255,.94)!important;
+border-color:rgba(15,135,86,.38)!important;
 }
-
 /* Professional photo interaction:
-   default = natural/normal photo; hover = precise highlighted focus */
+default = natural/normal photo; hover = precise highlighted focus */
 .portrait-card{
-  cursor:default;
-  transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease,background .28s ease;
+cursor:default;
+transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease,background .28s ease;
 }
 .portrait-card .portrait{
-  transition:filter .28s ease,transform .28s ease;
+transition:filter .28s ease,transform .28s ease;
 }
 .portrait-card:hover{
-  transform:translateY(-5px);
-  border-color:rgba(53,243,154,.42)!important;
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.10),0 28px 75px rgba(0,0,0,.30),0 0 34px rgba(53,243,154,.10)!important;
+transform:translateY(-5px);
+border-color:rgba(53,243,154,.42)!important;
+box-shadow:inset 0 1px 0 rgba(255,255,255,.10),0 28px 75px rgba(0,0,0,.30),0 0 34px rgba(53,243,154,.10)!important;
 }
 .portrait-card:hover .portrait{
-  filter:saturate(1) contrast(1.04);
-  transform:scale(1.012);
+filter:saturate(1) contrast(1.04);
+transform:scale(1.012);
 }
 .portrait-card:hover .portrait-corner{
-  border-color:rgba(53,243,154,.40);
-  color:#53f3ad;
+border-color:rgba(53,243,154,.40);
+color:#53f3ad;
 }
 .portrait-card:not(:hover) .portrait{
-  filter:saturate(.82) contrast(1.05);
-  transform:scale(1);
+filter:saturate(.82) contrast(1.05);
+transform:scale(1);
 }
 html.light .portrait-card:hover{
-  border-color:rgba(8,120,78,.40)!important;
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.95),0 25px 65px rgba(30,65,52,.14),0 0 30px rgba(8,120,78,.08)!important;
+border-color:rgba(8,120,78,.40)!important;
+box-shadow:inset 0 1px 0 rgba(255,255,255,.95),0 25px 65px rgba(30,65,52,.14),0 0 30px rgba(8,120,78,.08)!important;
 }
-
 .photo-focus{
-  position:absolute;z-index:5;right:22px;bottom:22px;width:30px;height:30px;border-radius:50%;
-  display:grid;place-items:center;opacity:0;transform:scale(.82);
-  color:#53f3ad;background:rgba(4,18,25,.72);
-  border:1px solid rgba(83,243,173,.34);
-  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
-  font:11px "JetBrains Mono";pointer-events:none;
-  transition:opacity .18s ease,transform .18s ease;
+position:absolute;z-index:5;right:22px;bottom:22px;width:30px;height:30px;border-radius:50%;
+display:grid;place-items:center;opacity:0;transform:scale(.82);
+color:#53f3ad;background:rgba(4,18,25,.72);
+border:1px solid rgba(83,243,173,.34);
+backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+font:11px "JetBrains Mono";pointer-events:none;
+transition:opacity .18s ease,transform .18s ease;
 }
 .portrait-card:hover .photo-focus{opacity:1;transform:scale(1)}
 html.light .photo-focus{
-  color:#08784e;background:rgba(255,255,255,.84);border-color:rgba(8,120,78,.25)
+color:#08784e;background:rgba(255,255,255,.84);border-color:rgba(8,120,78,.25)
 }
-
 /* Highlighted ServiceNow certifications */
 .certification-card.servicenow-highlight,
 .credential.servicenow-highlight,
 .cert.servicenow-highlight{
-  position:relative;
-  border-color:rgba(53,243,154,.48)!important;
-  background:linear-gradient(135deg,rgba(21,67,58,.62),rgba(7,28,34,.56))!important;
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.10),
-    inset 0 0 28px rgba(53,243,154,.045),
-    0 18px 55px rgba(0,0,0,.20),
-    0 0 28px rgba(53,243,154,.08)!important;
+position:relative;
+border-color:rgba(53,243,154,.48)!important;
+background:linear-gradient(135deg,rgba(21,67,58,.62),rgba(7,28,34,.56))!important;
+box-shadow:
+inset 0 1px 0 rgba(255,255,255,.10),
+inset 0 0 28px rgba(53,243,154,.045),
+0 18px 55px rgba(0,0,0,.20),
+0 0 28px rgba(53,243,154,.08)!important;
 }
 .certification-card.servicenow-highlight::before,
 .credential.servicenow-highlight::before,
 .cert.servicenow-highlight::before{
-  content:"SERVICE NOW";
-  position:absolute;top:12px;right:12px;
-  padding:5px 7px;border-radius:6px;
-  font:700 7px "JetBrains Mono";letter-spacing:.10em;
-  color:#53f3ad;background:rgba(5,22,27,.70);
-  border:1px solid rgba(83,243,173,.28);
-  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+content:"SERVICE NOW";
+position:absolute;top:12px;right:12px;
+padding:5px 7px;border-radius:6px;
+font:700 7px "JetBrains Mono";letter-spacing:.10em;
+color:#53f3ad;background:rgba(5,22,27,.70);
+border:1px solid rgba(83,243,173,.28);
+backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
 }
 html.light .certification-card.servicenow-highlight,
 html.light .credential.servicenow-highlight,
 html.light .cert.servicenow-highlight{
-  border-color:rgba(8,120,78,.38)!important;
-  background:linear-gradient(135deg,rgba(231,249,241,.90),rgba(247,252,250,.72))!important;
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.95),0 18px 50px rgba(30,65,52,.10),0 0 25px rgba(8,120,78,.07)!important;
+border-color:rgba(8,120,78,.38)!important;
+background:linear-gradient(135deg,rgba(231,249,241,.90),rgba(247,252,250,.72))!important;
+box-shadow:inset 0 1px 0 rgba(255,255,255,.95),0 18px 50px rgba(30,65,52,.10),0 0 25px rgba(8,120,78,.07)!important;
 }
 html.light .certification-card.servicenow-highlight::before,
 html.light .credential.servicenow-highlight::before,
 html.light .cert.servicenow-highlight::before{
-  color:#08784e;background:rgba(255,255,255,.84);border-color:rgba(8,120,78,.20);
+color:#08784e;background:rgba(255,255,255,.84);border-color:rgba(8,120,78,.20);
 }
-
 /* === HIGH-VISIBILITY SERVICENOW CERTIFICATION === */
 .servicenow-highlight{
-  position:relative!important;
-  overflow:hidden!important;
-  border:1.5px solid rgba(83,243,173,.72)!important;
-  background:linear-gradient(135deg,rgba(27,75,63,.78),rgba(7,27,35,.72))!important;
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.12),
-    inset 0 0 35px rgba(83,243,173,.08),
-    0 0 0 1px rgba(83,243,173,.10),
-    0 14px 45px rgba(0,0,0,.22),
-    0 0 32px rgba(83,243,173,.16)!important;
-  transform:translateY(-2px);
+position:relative!important;
+overflow:hidden!important;
+border:1.5px solid rgba(83,243,173,.72)!important;
+background:linear-gradient(135deg,rgba(27,75,63,.78),rgba(7,27,35,.72))!important;
+box-shadow:
+inset 0 1px 0 rgba(255,255,255,.12),
+inset 0 0 35px rgba(83,243,173,.08),
+0 0 0 1px rgba(83,243,173,.10),
+0 14px 45px rgba(0,0,0,.22),
+0 0 32px rgba(83,243,173,.16)!important;
+transform:translateY(-2px);
 }
 .servicenow-highlight::after{
-  content:"SERVICENOW CERTIFIED";
-  position:absolute!important;
-  top:12px!important;
-  right:12px!important;
-  z-index:5!important;
-  padding:6px 9px!important;
-  border-radius:999px!important;
-  color:#06130e!important;
-  background:#53f3ad!important;
-  border:1px solid rgba(255,255,255,.38)!important;
-  box-shadow:0 5px 18px rgba(83,243,173,.22)!important;
-  font:800 7px "JetBrains Mono"!important;
-  letter-spacing:.09em!important;
+content:"SERVICENOW CERTIFIED";
+position:absolute!important;
+top:12px!important;
+right:12px!important;
+z-index:5!important;
+padding:6px 9px!important;
+border-radius:999px!important;
+color:#06130e!important;
+background:#53f3ad!important;
+border:1px solid rgba(255,255,255,.38)!important;
+box-shadow:0 5px 18px rgba(83,243,173,.22)!important;
+font:800 7px "JetBrains Mono"!important;
+letter-spacing:.09em!important;
 }
 .servicenow-highlight::before{
-  content:"★";
-  position:absolute!important;
-  top:13px!important;
-  left:13px!important;
-  z-index:5!important;
-  color:#53f3ad!important;
-  font-size:13px!important;
+content:"★";
+position:absolute!important;
+top:13px!important;
+left:13px!important;
+z-index:5!important;
+color:#53f3ad!important;
+font-size:13px!important;
 }
 .servicenow-highlight:hover{
-  transform:translateY(-5px)!important;
-  border-color:#53f3ad!important;
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.16),
-    0 0 0 1px rgba(83,243,173,.20),
-    0 18px 55px rgba(0,0,0,.28),
-    0 0 45px rgba(83,243,173,.24)!important;
+transform:translateY(-5px)!important;
+border-color:#53f3ad!important;
+box-shadow:
+inset 0 1px 0 rgba(255,255,255,.16),
+0 0 0 1px rgba(83,243,173,.20),
+0 18px 55px rgba(0,0,0,.28),
+0 0 45px rgba(83,243,173,.24)!important;
 }
 html.light .servicenow-highlight{
-  border:1.5px solid rgba(8,120,78,.58)!important;
-  background:linear-gradient(135deg,rgba(221,248,237,.94),rgba(249,253,251,.88))!important;
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.98),
-    0 0 0 1px rgba(8,120,78,.08),
-    0 16px 45px rgba(30,65,52,.12),
-    0 0 28px rgba(8,120,78,.10)!important;
+border:1.5px solid rgba(8,120,78,.58)!important;
+background:linear-gradient(135deg,rgba(221,248,237,.94),rgba(249,253,251,.88))!important;
+box-shadow:
+inset 0 1px 0 rgba(255,255,255,.98),
+0 0 0 1px rgba(8,120,78,.08),
+0 16px 45px rgba(30,65,52,.12),
+0 0 28px rgba(8,120,78,.10)!important;
 }
 html.light .servicenow-highlight::after{
-  color:#fff!important;
-  background:#08784e!important;
-  border-color:rgba(255,255,255,.55)!important;
+color:#fff!important;
+background:#08784e!important;
+border-color:rgba(255,255,255,.55)!important;
 }
 html.light .servicenow-highlight::before{color:#08784e!important}
-
 /* ServiceNow: star-only emphasis */
 .servicenow-highlight{
-  position:relative!important;
-  overflow:visible!important;
-  border:inherit!important;
-  background:inherit!important;
-  box-shadow:inherit!important;
-  transform:none!important;
+position:relative!important;
+overflow:visible!important;
+border:inherit!important;
+background:inherit!important;
+box-shadow:inherit!important;
+transform:none!important;
 }
 .servicenow-highlight::after{content:none!important}
 .servicenow-highlight::before{
-  content:"★"!important;
-  position:absolute!important;
-  top:10px!important;
-  left:10px!important;
-  z-index:5!important;
-  color:#111!important;
-  background:transparent!important;
-  border:0!important;
-  box-shadow:none!important;
-  padding:0!important;
-  font:700 13px Arial,sans-serif!important;
+content:"★"!important;
+position:absolute!important;
+top:10px!important;
+left:10px!important;
+z-index:5!important;
+color:#111!important;
+background:transparent!important;
+border:0!important;
+box-shadow:none!important;
+padding:0!important;
+font:700 13px Arial,sans-serif!important;
 }
 .servicenow-highlight:hover{
-  transform:none!important;
-  border-color:inherit!important;
-  box-shadow:inherit!important;
+transform:none!important;
+border-color:inherit!important;
+box-shadow:inherit!important;
 }
 html.light .servicenow-highlight::before{
-  color:#111!important;
+color:#111!important;
 }
-
 /* Accessible typography for both themes */
 :root{
-  --text-main:#f2faf6;
-  --text-body:#d2e0db;
-  --text-muted:#a9bbb5;
-  --text-soft:#b9cbc5;
+--text-main:#f2faf6;
+--text-body:#d2e0db;
+--text-muted:#a9bbb5;
+--text-soft:#b9cbc5;
 }
 html.light{
-  --text-main:#10241d;
-  --text-body:#253a33;
-  --text-muted:#435850;
-  --text-soft:#334941;
+--text-main:#10241d;
+--text-body:#253a33;
+--text-muted:#435850;
+--text-soft:#334941;
 }
 html.light body,
 html.light p,
@@ -490,7 +476,7 @@ html.light .subtitle,
 html.light .hero-sub,
 html.light .channel-note,
 html.light .dialog-email{
-  color:var(--text-body)!important;
+color:var(--text-body)!important;
 }
 html.light h1,
 html.light h2,
@@ -501,13 +487,13 @@ html.light b,
 html.light .name,
 html.light .title,
 html.light .eyebrow{
-  color:var(--text-main)!important;
+color:var(--text-main)!important;
 }
 html.light .eyebrow,
 html.light .ok,
 html.light .accent,
 html.light .green{
-  color:#075f3f!important;
+color:#075f3f!important;
 }
 html.light .navlinks a,
 html.light .nav a,
@@ -517,16 +503,16 @@ html.light .contact-row span,
 html.light .contact-row a,
 html.light .metric span,
 html.light .skill span{
-  color:#172d25!important;
+color:#172d25!important;
 }
 html.light .field{
-  color:#10241d!important;
-  background:rgba(255,255,255,.82)!important;
-  border-color:rgba(16,71,53,.20)!important;
+color:#10241d!important;
+background:rgba(255,255,255,.82)!important;
+border-color:rgba(16,71,53,.20)!important;
 }
 html.light .field::placeholder{
-  color:#53675f!important;
-  opacity:1;
+color:#53675f!important;
+opacity:1;
 }
 html.light .check,
 html.light .skill,
@@ -534,57 +520,56 @@ html.light .project,
 html.light .credential,
 html.light .feature,
 html.light .metric{
-  color:#253a33!important;
+color:#253a33!important;
 }
 html.light .check b{
-  color:#075f3f!important;
+color:#075f3f!important;
 }
 html.light footer,
 html.light footer *{
-  color:#40554d!important;
+color:#40554d!important;
 }
 html.light .copyright{
-  color:#30473e!important;
+color:#30473e!important;
 }
 html.light .phone-reveal{
-  color:#172d25!important;
+color:#172d25!important;
 }
 html.light .phone-hint{
-  color:#075f3f!important;
+color:#075f3f!important;
 }
 html.light .portrait-label{
-  color:#172d25!important;
-  background:rgba(255,255,255,.82)!important;
+color:#172d25!important;
+background:rgba(255,255,255,.82)!important;
 }
 html.light .portrait-label b,
 html.light .portrait-corner{
-  color:#075f3f!important;
+color:#075f3f!important;
 }
-
 /* Final typography and ServiceNow star placement */
 .servicenow-highlight::before{
-  left:auto!important;
-  right:14px!important;
-  top:12px!important;
-  color:#111!important;
-  font-size:14px!important;
-  font-weight:900!important;
+left:auto!important;
+right:14px!important;
+top:12px!important;
+color:#111!important;
+font-size:14px!important;
+font-weight:900!important;
 }
 html.light .servicenow-highlight::before{
-  color:#111!important;
+color:#111!important;
 }
 body, p, li, .description, .channel-note, .dialog-email{
-  font-weight:500;
+font-weight:500;
 }
 h1,h2,h3,h4,.name,.title,.eyebrow,.navlinks a,.social-pill,
 .feature b,.skill b,.project b,.credential b,.metric b,
 .check b,.contact-row a,.hello-btn,.send,.badge{
-  font-weight:750!important;
+font-weight:750!important;
 }
 html.light body,html.light p,html.light li,html.light .description,
 html.light .channel-note,html.light .dialog-email,
 html.light .check,html.light .skill,html.light .project,html.light .credential{
-  font-weight:600!important;
+font-weight:600!important;
 }
 html.light h1,html.light h2,html.light h3,html.light h4,
 html.light .name,html.light .title,html.light .eyebrow,
@@ -592,9 +577,8 @@ html.light .navlinks a,html.light .social-pill,
 html.light .feature b,html.light .skill b,html.light .project b,
 html.light .credential b,html.light .metric b,html.light .check b,
 html.light .contact-row a{
-  font-weight:800!important;
+font-weight:800!important;
 }
-
 .social-pill,.contact-row,.location-row{display:flex!important;align-items:center!important;justify-content:flex-start!important;gap:10px!important}
 .social-icon,.location-icon{width:19px;height:19px;min-width:19px;display:inline-flex;align-items:center;justify-content:center;color:currentColor}
 .social-icon svg,.location-icon svg{width:18px;height:18px;display:block}
@@ -602,6 +586,9 @@ html.light .social-icon{color:#10241d!important}
 html:not(.light) .social-icon{color:#d8eee5}
 .location-icon{color:#53f3ad}
 html.light .location-icon{color:#075f3f!important}
+
+/* AHK logo safeguard: prevents hero/image rules from resizing the navbar logo */
+header .brand img.brand-logo, nav .brand img.brand-logo, .brand img.brand-logo { width:42px!important; height:42px!important; max-width:42px!important; max-height:42px!important; min-width:42px!important; min-height:42px!important; object-fit:contain!important; position:static!important; display:block!important; margin:0!important; }
 </style>
 </head>
 <body>
@@ -612,90 +599,84 @@ html.light .location-icon{color:#075f3f!important}
 <nav class="navlinks" id="nav"><a class="active" href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a></nav>
 <div class="nav-actions"><button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">☾</button><a href="resume.pdf" download style="font:8px 'JetBrains Mono';color:var(--green);border:1px solid var(--line);padding:8px 10px;border-radius:7px">RESUME ↓</a><button class="menu" id="menu">☰</button></div>
 </div></header>
-
 <main>
 <section class="hero wrap reveal" id="home">
 <div class="hero-editorial">
-  <div class="hero-copy">
-    <div class="eyebrow">CSE UNDERGRADUATE · SOFTWARE DEVELOPER</div>
-    <h1>Hi, I'm <span>Akkapeddi Hemanth Kumar.</span></h1>
-    <h2>I build software that turns <span>complex requirements</span> into clear, reliable solutions.</h2>
-    <p class="hero-sub">Computer Science undergraduate with hands-on experience in ServiceNow application development, workflow automation, web development and programming.</p>
-    <div class="hero-actions">
-      <a class="hello-btn" href="mailto:akkapeddihemanthkumar9@gmail.com">👋 Say Hello</a>
-      <a class="outline-btn" href="#projects">View Projects ↗</a>
-    </div>
-    <div class="hero-socials" aria-label="Social links">
-      <a href="https://github.com/hemanth45-9" target="_blank" rel="noopener" class="social-pill"><span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6A11.4 11.4 0 0 0 8.4 23c.57.1.78-.25.78-.55v-2.02c-3.17.69-3.84-1.34-3.84-1.34-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.67 1.25 3.32.95.1-.74.4-1.25.73-1.54-2.53-.29-5.19-1.27-5.19-5.65 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.17a10.9 10.9 0 0 1 5.72 0c2.18-1.48 3.14-1.17 3.14-1.17.62 1.57.23 2.73.11 3.02.73.8 1.18 1.82 1.18 3.07 0 4.39-2.67 5.35-5.21 5.64.41.36.78 1.06.78 2.14v3.17c0 .3.21.66.79.55A11.4 11.4 0 0 0 12 .6Z"/></svg></span>GitHub</a>
-      <a href="https://www.linkedin.com/in/a-hemanth-kumar-48a7ab306/" target="_blank" rel="noopener" class="social-pill"><span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.16 7.24A2.16 2.16 0 1 1 5.16 2.92a2.16 2.16 0 0 1 0 4.32ZM3.23 21.08h3.86V9.2H3.23v11.88ZM9.53 9.2h3.7v1.62h.05c.52-.99 1.78-2.03 3.66-2.03 3.92 0 4.64 2.58 4.64 5.93v6.36h-3.86v-5.64c0-1.35-.02-3.09-1.88-3.09-1.89 0-2.18 1.47-2.18 2.99v5.74H9.8V9.2h-.27Z"/></svg></span>LinkedIn</a>
-      <a href="mailto:akkapeddihemanthkumar9@gmail.com" class="social-pill">✉ Email</a>
-    </div>
-  </div>
-  <div class="hero-portrait">
-    <div class="portrait-glow"></div>
-    <div class="portrait-card glass">
-      <img src="profile.png" alt="Akkapeddi Hemanth Kumar">
-      <div class="portrait-meta"><span>AHK / 01</span><b>SOFTWARE DEVELOPER</b></div>
-    </div>
-    <div class="portrait-status glass"><i></i> AVAILABLE FOR OPPORTUNITIES</div>
-  </div>
+<div class="hero-copy">
+<div class="eyebrow">CSE UNDERGRADUATE · SOFTWARE DEVELOPER</div>
+<h1>Hi, I'm <span>Akkapeddi Hemanth Kumar.</span></h1>
+<h2>I build software that turns <span>complex requirements</span> into clear, reliable solutions.</h2>
+<p class="hero-sub">Computer Science undergraduate with hands-on experience in ServiceNow application development, workflow automation, web development and programming.</p>
+<div class="hero-actions">
+<a class="hello-btn" href="mailto:akkapeddihemanthkumar9@gmail.com">👋 Say Hello</a>
+<a class="outline-btn" href="#projects">View Projects ↗</a>
+</div>
+<div class="hero-socials" aria-label="Social links">
+<a href="https://github.com/hemanth45-9" target="_blank" rel="noopener" class="social-pill"><span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6A11.4 11.4 0 0 0 8.4 23c.57.1.78-.25.78-.55v-2.02c-3.17.69-3.84-1.34-3.84-1.34-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.67 1.25 3.32.95.1-.74.4-1.25.73-1.54-2.53-.29-5.19-1.27-5.19-5.65 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.17a10.9 10.9 0 0 1 5.72 0c2.18-1.48 3.14-1.17 3.14-1.17.62 1.57.23 2.73.11 3.02.73.8 1.18 1.82 1.18 3.07 0 4.39-2.67 5.35-5.21 5.64.41.36.78 1.06.78 2.14v3.17c0 .3.21.66.79.55A11.4 11.4 0 0 0 12 .6Z"/></svg></span>GitHub</a>
+<a href="https://www.linkedin.com/in/a-hemanth-kumar-48a7ab306/" target="_blank" rel="noopener" class="social-pill"><span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.16 7.24A2.16 2.16 0 1 1 5.16 2.92a2.16 2.16 0 0 1 0 4.32ZM3.23 21.08h3.86V9.2H3.23v11.88ZM9.53 9.2h3.7v1.62h.05c.52-.99 1.78-2.03 3.66-2.03 3.92 0 4.64 2.58 4.64 5.93v6.36h-3.86v-5.64c0-1.35-.02-3.09-1.88-3.09-1.89 0-2.18 1.47-2.18 2.99v5.74H9.8V9.2h-.27Z"/></svg></span>LinkedIn</a>
+<a href="mailto:akkapeddihemanthkumar9@gmail.com" class="social-pill">✉ Email</a>
+</div>
+</div>
+<div class="hero-portrait">
+<div class="portrait-glow"></div>
+<div class="portrait-card glass">
+<img src="profile.png" alt="Akkapeddi Hemanth Kumar">
+<div class="portrait-meta"><span>AHK / 01</span><b>SOFTWARE DEVELOPER</b></div>
+</div>
+<div class="portrait-status glass"><i></i> AVAILABLE FOR OPPORTUNITIES</div>
+</div>
 </div>
 <div class="skill-marquee" aria-label="Skills">
-  <div class="marquee-track">
-    <span>// SERVICENOW</span><span>// PYTHON</span><span>// JAVASCRIPT</span><span>// REACT.JS</span><span>// HTML</span><span>// CSS</span><span>// POSTGRESQL</span><span>// MYSQL</span><span>// GIT & GITHUB</span><span>// DOCKER</span><span>// TABLEAU</span><span>// AUTOMATION</span>
-    <span>// SERVICENOW</span><span>// PYTHON</span><span>// JAVASCRIPT</span><span>// REACT.JS</span><span>// HTML</span><span>// CSS</span><span>// POSTGRESQL</span><span>// MYSQL</span><span>// GIT & GITHUB</span><span>// DOCKER</span><span>// TABLEAU</span><span>// AUTOMATION</span>
-  </div>
+<div class="marquee-track">
+<span>// SERVICENOW</span><span>// PYTHON</span><span>// JAVASCRIPT</span><span>// REACT.JS</span><span>// HTML</span><span>// CSS</span><span>// POSTGRESQL</span><span>// MYSQL</span><span>// GIT & GITHUB</span><span>// DOCKER</span><span>// TABLEAU</span><span>// AUTOMATION</span>
+<span>// SERVICENOW</span><span>// PYTHON</span><span>// JAVASCRIPT</span><span>// REACT.JS</span><span>// HTML</span><span>// CSS</span><span>// POSTGRESQL</span><span>// MYSQL</span><span>// GIT & GITHUB</span><span>// DOCKER</span><span>// TABLEAU</span><span>// AUTOMATION</span>
+</div>
 </div>
 </section>
-
 <section id="about"><div class="wrap reveal">
 <div class="section-title"><div class="eyebrow">ABOUT / 01</div><h2>A practical developer with a <span style="color:var(--green)">systems mindset.</span></h2><p>Focused on learning, building and improving software through hands-on work.</p></div>
 <div class="about-editorial">
-  <div class="about-copy glass">
-    <div class="eyebrow">WHO I AM</div>
-    <p class="about-lead">I'm a Computer Science undergraduate who enjoys turning tricky requirements into simple, working software.</p>
-    <p>I have practical experience developing ServiceNow applications and automations, building responsive web interfaces, and working with programming languages and databases. My projects have involved employee onboarding, incident workflows, SLA management and e-commerce functionality.</p>
-    <p>I value clean structure, useful automation and continuous improvement — from understanding a problem to delivering a solution that people can actually use.</p>
-    <div class="about-points"><span>✓ ServiceNow Development</span><span>✓ Workflow Automation</span><span>✓ Web Development</span><span>✓ Programming & Databases</span></div>
-  </div>
-  <div class="about-side">
-    <div class="about-stat glass"><b>B.Tech</b><span>Computer Science</span></div>
-    <div class="about-stat glass"><b>ServiceNow</b><span>Application & Workflow Development</span></div>
-    <div class="about-stat glass"><b>React.js</b><span>Responsive Web Development</span></div>
-    <div class="about-stat glass"><b>Hyderabad</b><span>Telangana, India</span></div>
-  </div>
+<div class="about-copy glass">
+<div class="eyebrow">WHO I AM</div>
+<p class="about-lead">I'm a Computer Science undergraduate who enjoys turning tricky requirements into simple, working software.</p>
+<p>I have practical experience developing ServiceNow applications and automations, building responsive web interfaces, and working with programming languages and databases. My projects have involved employee onboarding, incident workflows, SLA management and e-commerce functionality.</p>
+<p>I value clean structure, useful automation and continuous improvement — from understanding a problem to delivering a solution that people can actually use.</p>
+<div class="about-points"><span>✓ ServiceNow Development</span><span>✓ Workflow Automation</span><span>✓ Web Development</span><span>✓ Programming & Databases</span></div>
+</div>
+<div class="about-side">
+<div class="about-stat glass"><b>B.Tech</b><span>Computer Science</span></div>
+<div class="about-stat glass"><b>ServiceNow</b><span>Application & Workflow Development</span></div>
+<div class="about-stat glass"><b>React.js</b><span>Responsive Web Development</span></div>
+<div class="about-stat glass"><b>Hyderabad</b><span>Telangana, India</span></div>
+</div>
 </div>
 </div></section>
-
 <section id="skills"><div class="wrap reveal">
 <div class="section-title"><div class="eyebrow">TOOLKIT / 02</div><h2>Skills I work with.</h2><p>A focused technical toolkit built through academic work, certifications and independent projects.</p></div>
 <div class="skill-grid-pro">
- <article class="skill-pro glass"><div class="skill-top"><span class="skill-num">01</span><span class="skill-code">PY</span></div><h3>Programming</h3><p>Core programming and scripting for application logic and automation.</p><div class="skill-tags"><b>Python</b><b>JavaScript</b></div></article>
- <article class="skill-pro glass"><div class="skill-top"><span class="skill-num">02</span><span class="skill-code">WEB</span></div><h3>Web Development</h3><p>Responsive interfaces and application experiences with modern web fundamentals.</p><div class="skill-tags"><b>React.js</b><b>HTML</b><b>CSS</b></div></article>
- <article class="skill-pro glass"><div class="skill-top"><span class="skill-num">03</span><span class="skill-code">SN</span></div><h3>ServiceNow</h3><p>Application development, workflow automation, incident and SLA management.</p><div class="skill-tags"><b>Applications</b><b>Workflows</b><b>Incidents</b><b>SLA</b></div></article>
- <article class="skill-pro glass"><div class="skill-top"><span class="skill-num">04</span><span class="skill-code">DB</span></div><h3>Databases</h3><p>Working knowledge of relational databases for structured application data.</p><div class="skill-tags"><b>PostgreSQL</b><b>MySQL</b></div></article>
- <article class="skill-pro glass"><div class="skill-top"><span class="skill-num">05</span><span class="skill-code">OPS</span></div><h3>Tools & Platforms</h3><p>Development, collaboration, containerization and data visualization tools.</p><div class="skill-tags"><b>Git</b><b>GitHub</b><b>Docker</b><b>VS Code</b><b>Tableau</b></div></article>
+<article class="skill-pro glass"><div class="skill-top"><span class="skill-num">01</span><span class="skill-code">PY</span></div><h3>Programming</h3><p>Core programming and scripting for application logic and automation.</p><div class="skill-tags"><b>Python</b><b>JavaScript</b></div></article>
+<article class="skill-pro glass"><div class="skill-top"><span class="skill-num">02</span><span class="skill-code">WEB</span></div><h3>Web Development</h3><p>Responsive interfaces and application experiences with modern web fundamentals.</p><div class="skill-tags"><b>React.js</b><b>HTML</b><b>CSS</b></div></article>
+<article class="skill-pro glass"><div class="skill-top"><span class="skill-num">03</span><span class="skill-code">SN</span></div><h3>ServiceNow</h3><p>Application development, workflow automation, incident and SLA management.</p><div class="skill-tags"><b>Applications</b><b>Workflows</b><b>Incidents</b><b>SLA</b></div></article>
+<article class="skill-pro glass"><div class="skill-top"><span class="skill-num">04</span><span class="skill-code">DB</span></div><h3>Databases</h3><p>Working knowledge of relational databases for structured application data.</p><div class="skill-tags"><b>PostgreSQL</b><b>MySQL</b></div></article>
+<article class="skill-pro glass"><div class="skill-top"><span class="skill-num">05</span><span class="skill-code">OPS</span></div><h3>Tools & Platforms</h3><p>Development, collaboration, containerization and data visualization tools.</p><div class="skill-tags"><b>Git</b><b>GitHub</b><b>Docker</b><b>VS Code</b><b>Tableau</b></div></article>
 </div>
 </div></section>
-
 <section id="projects"><div class="wrap reveal"><div class="section-title"><div class="eyebrow">CASE FILES / 03</div><h2>Projects</h2></div>
 <div class="projects">
 <article class="project glass"><div class="num">CASE-01 / SERVICENOW</div><h3>Employee Onboarding Automation</h3><p>Custom ServiceNow application automating employee onboarding across HR, IT, Facilities, Security and Management.</p><ul><li>Dynamic task generation by department and role.</li><li>Approvals, assignments, notifications, due dates, escalations and completion.</li></ul><div class="tags"><span class="tag">SERVICENOW</span><span class="tag">AUTOMATION</span></div></article>
 <article class="project glass"><div class="num">CASE-02 / INCIDENT OPS</div><h3>Incident Assignment & Escalation Automation</h3><p>Automated incident workflow routing tickets using category, subcategory, priority and location.</p><ul><li>Assignment rules and SLA conditions.</li><li>Notifications, escalations, reports and dashboards.</li></ul><div class="tags"><span class="tag">INCIDENTS</span><span class="tag">SLA</span></div></article>
 <article class="project glass"><div class="num">CASE-03 / WEB</div><h3>E-Commerce Website</h3><p>Responsive e-commerce website with product browsing, search, details, cart, registration, login and checkout.</p><ul><li>Filtering and order management.</li><li>Payment-interface prototype.</li></ul><div class="tags"><span class="tag">REACT.JS</span><span class="tag">JAVASCRIPT</span></div></article>
 </div></div></section>
-
 <section id="credentials"><div class="wrap reveal"><div class="section-title"><div class="eyebrow">VERIFICATION / 04</div><h2>Credentials & Education</h2></div>
 <div class="credentials"><div class="credential glass"><div class="num">CERTIFICATIONS</div><h3>Professional Certifications</h3>
 <div class="credential-item servicenow-highlight"><b>✓</b> ServiceNow Certified System Administrator</div><div class="credential-item servicenow-highlight"><b>✓</b> ServiceNow Certified Application Developer</div><div class="credential-item"><b>✓</b> Infosys Springboard — Java Programming</div><div class="credential-item"><b>✓</b> Cisco Networking Academy — Python Essentials 1</div><div class="credential-item"><b>✓</b> Artificial Intelligence and Machine Learning — IIIT Hyderabad</div></div>
 <div class="credential glass"><div class="num">EDUCATION</div><h3>Academic Background</h3>
 <div class="credential-item"><b>2023 – Present</b> Vignan Institute of Technology and Science — B.Tech, Computer Science</div><div class="credential-item"><b>2021 – 2023</b> Narayana Junior College — Mathematics, Physics, Chemistry</div><div class="credential-item"><b>2021</b> Dilsukhnagar Public School — Board of Secondary School Education</div></div></div></div></section>
-
 <section id="contact"><div class="wrap reveal"><div class="section-title"><div class="eyebrow">SECURE CHANNEL / 05</div><h2>Contact</h2></div>
 <div class="contact"><div class="contact-card glass"><div class="contact-row"><span>EMAIL</span><a href="mailto:akkapeddihemanthkumar9@gmail.com">akkapeddihemanthkumar9@gmail.com</a></div><div class="contact-row"><span>PHONE</span>
 <button type="button" class="phone-reveal" id="phoneReveal" aria-label="Click to reveal phone number">
-  <span class="phone-blurred" id="phoneText">8374450045</span>
-  <span class="phone-hint" id="phoneHint">Click to reveal</span>
+<span class="phone-blurred" id="phoneText">8374450045</span>
+<span class="phone-hint" id="phoneHint">Click to reveal</span>
 </button>
 </div><div class="contact-row"><span>LOCATION</span>Hyderabad, Telangana, India</div><div class="contact-row"><span>PROFILES</span><a href="https://github.com/hemanth45-9" target="_blank"><span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6A11.4 11.4 0 0 0 8.4 23c.57.1.78-.25.78-.55v-2.02c-3.17.69-3.84-1.34-3.84-1.34-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.67 1.25 3.32.95.1-.74.4-1.25.73-1.54-2.53-.29-5.19-1.27-5.19-5.65 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.17a10.9 10.9 0 0 1 5.72 0c2.18-1.48 3.14-1.17 3.14-1.17.62 1.57.23 2.73.11 3.02.73.8 1.18 1.82 1.18 3.07 0 4.39-2.67 5.35-5.21 5.64.41.36.78 1.06.78 2.14v3.17c0 .3.21.66.79.55A11.4 11.4 0 0 0 12 .6Z"/></svg></span>GitHub</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/a-hemanth-kumar-48a7ab306/" target="_blank"><span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.16 7.24A2.16 2.16 0 1 1 5.16 2.92a2.16 2.16 0 0 1 0 4.32ZM3.23 21.08h3.86V9.2H3.23v11.88ZM9.53 9.2h3.7v1.62h.05c.52-.99 1.78-2.03 3.66-2.03 3.92 0 4.64 2.58 4.64 5.93v6.36h-3.86v-5.64c0-1.35-.02-3.09-1.88-3.09-1.89 0-2.18 1.47-2.18 2.99v5.74H9.8V9.2h-.27Z"/></svg></span>LinkedIn</a></div></div>
 <div class="contact-card glass">
@@ -704,94 +685,84 @@ html.light .location-icon{color:#075f3f!important}
 <p class="channel-note">Have an opportunity, project, or question? Use the message section below to contact me directly.</p>
 <a class="hello-btn" href="mailto:akkapeddihemanthkumar9@gmail.com">👋 Say Hello</a>
 </div></div></div></section>
-
-
 <div class="contact-card glass" id="contactMessage" style="grid-column:1/-1;margin-top:12px">
-  <div class="eyebrow">MESSAGE SECTION / SECURE CHANNEL</div>
-  <div class="dialog-head" style="margin-top:6px">
-    <div>
-      <h3 style="font:700 20px 'Space Grotesk';margin:3px 0">Send a message</h3>
-      <p class="channel-note">Fill in your details and click send. Your default email client will open with the message prepared.</p>
-    </div>
-    <div class="dialog-status">● CHANNEL READY</div>
-  </div>
-  <form id="secureForm" class="dialog-form">
-    <input class="field" name="name" placeholder="Name" autocomplete="name" required>
-    <input class="field" name="email" type="email" placeholder="Email" autocomplete="email" required>
-    <textarea class="field" name="message" placeholder="Message" required></textarea>
-    <div class="dialog-actions">
-      <button class="hello-btn" type="submit">✉ Send Message</button>
-      <span class="dialog-email">akkapeddihemanthkumar9@gmail.com</span>
-    </div>
-  </form>
+<div class="eyebrow">MESSAGE SECTION / SECURE CHANNEL</div>
+<div class="dialog-head" style="margin-top:6px">
+<div>
+<h3 style="font:700 20px 'Space Grotesk';margin:3px 0">Send a message</h3>
+<p class="channel-note">Fill in your details and click send. Your default email client will open with the message prepared.</p>
 </div>
-
+<div class="dialog-status">● CHANNEL READY</div>
+</div>
+<form id="secureForm" class="dialog-form">
+<input class="field" name="name" placeholder="Name" autocomplete="name" required>
+<input class="field" name="email" type="email" placeholder="Email" autocomplete="email" required>
+<textarea class="field" name="message" placeholder="Message" required></textarea>
+<div class="dialog-actions">
+<button class="hello-btn" type="submit">✉ Send Message</button>
+<span class="dialog-email">akkapeddihemanthkumar9@gmail.com</span>
+</div>
+</form>
+</div>
 </main>
 <footer><div class="wrap footer"><div>© 2026 Akkapeddi Hemanth Kumar. All rights reserved.</div><div class="footer-links"><a href="#home">Home</a><a href="#projects">Projects</a><a href="mailto:akkapeddihemanthkumar9@gmail.com">Email</a></div></div></footer>
 <script>
 const menu=document.getElementById('menu'),nav=document.getElementById('nav');menu.onclick=()=>nav.classList.toggle('open');
 document.querySelectorAll('.navlinks a').forEach(a=>a.onclick=()=>nav.classList.remove('open'));
-
 document.addEventListener('DOMContentLoaded',()=>{
-  document.querySelectorAll('.reveal').forEach(el=>el.classList.add('show'));
+document.querySelectorAll('.reveal').forEach(el=>el.classList.add('show'));
 });
-
 const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.1});document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
 const secs=[...document.querySelectorAll('main section[id]')],links=[...document.querySelectorAll('.navlinks a')];addEventListener('scroll',()=>{let y=scrollY+130,c=secs.reduce((a,s)=>s.offsetTop<=y?s.id:a,'home');links.forEach(a=>a.classList.toggle('active',a.hash==='#'+c))});
 document.getElementById('secureForm').onsubmit=e=>{
-  e.preventDefault();
-  const f=new FormData(e.currentTarget);
-  const subject=encodeURIComponent('Portfolio Contact — '+f.get('name'));
-  const body=encodeURIComponent(`Name: ${f.get('name')}
+e.preventDefault();
+const f=new FormData(e.currentTarget);
+const subject=encodeURIComponent('Portfolio Contact — '+f.get('name'));
+const body=encodeURIComponent(\`Name: ${f.get('name')}
 Email: ${f.get('email')}
-
-${f.get('message')}`);
-  location.href=`mailto:akkapeddihemanthkumar9@gmail.com?subject=${subject}&body=${body}`;
+${f.get('message')}\`);
+location.href=\`mailto:akkapeddihemanthkumar9@gmail.com?subject=${subject}&body=${body}\`;
 };
-
-
 const themeToggle=document.getElementById('themeToggle');
 const savedTheme=localStorage.getItem('ahk-theme');
 if(savedTheme==='light') document.body.classList.add('light');
 function updateThemeIcon(){themeToggle.textContent=document.body.classList.contains('light')?'☀':'☾';themeToggle.setAttribute('aria-label',document.body.classList.contains('light')?'Switch to dark theme':'Switch to light theme')}
 updateThemeIcon();
 themeToggle.addEventListener('click',()=>{document.body.classList.toggle('light');localStorage.setItem('ahk-theme',document.body.classList.contains('light')?'light':'dark');updateThemeIcon()});
-
 const phoneReveal=document.getElementById('phoneReveal');
 const phoneText=document.getElementById('phoneText');
 const phoneHint=document.getElementById('phoneHint');
 if(phoneReveal){
-  phoneReveal.addEventListener('click',()=>{
-    const shown=phoneReveal.classList.toggle('revealed');
-    phoneHint.textContent=shown?'Click to hide':'Click to reveal';
-    phoneReveal.setAttribute('aria-label',shown?'Click to hide phone number':'Click to reveal phone number');
-  });
+phoneReveal.addEventListener('click',()=>{
+const shown=phoneReveal.classList.toggle('revealed');
+phoneHint.textContent=shown?'Click to hide':'Click to reveal';
+phoneReveal.setAttribute('aria-label',shown?'Click to hide phone number':'Click to reveal phone number');
+});
 }
 </script>
 <script>
 /* Full-page theme switch */
 (function(){
-  const root=document.documentElement;
-  const toggle=document.querySelector('[data-theme-toggle],#themeToggle,.theme-toggle');
-  const saved=localStorage.getItem('ahk-theme');
-  if(saved==='light') root.classList.add('light');
-
-  function sync(){
-    const light=root.classList.contains('light');
-    if(toggle){
-      toggle.setAttribute('aria-label', light ? 'Switch to dark theme' : 'Switch to light theme');
-      toggle.setAttribute('title', light ? 'Switch to dark theme' : 'Switch to light theme');
-      if(toggle.dataset && 'theme' in toggle.dataset) toggle.dataset.theme=light?'light':'dark';
-    }
-  }
-  if(toggle){
-    toggle.addEventListener('click',function(e){
-      e.preventDefault();
-      root.classList.toggle('light');
-      localStorage.setItem('ahk-theme',root.classList.contains('light')?'light':'dark');
-      sync();
-    });
-  }
-  sync();
+const root=document.documentElement;
+const toggle=document.querySelector('[data-theme-toggle],#themeToggle,.theme-toggle');
+const saved=localStorage.getItem('ahk-theme');
+if(saved==='light') root.classList.add('light');
+function sync(){
+const light=root.classList.contains('light');
+if(toggle){
+toggle.setAttribute('aria-label', light ? 'Switch to dark theme': 'Switch to light theme');
+toggle.setAttribute('title', light ? 'Switch to dark theme': 'Switch to light theme');
+if(toggle.dataset && 'theme' in toggle.dataset) toggle.dataset.theme=light?'light':'dark';
+}
+}
+if(toggle){
+toggle.addEventListener('click',function(e){
+e.preventDefault();
+root.classList.toggle('light');
+localStorage.setItem('ahk-theme',root.classList.contains('light')?'light':'dark');
+sync();
+});
+}
+sync();
 })();
 </script></body></html>
